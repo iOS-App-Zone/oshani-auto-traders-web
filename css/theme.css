@@ -1,0 +1,107 @@
+/**
+ * Oshani Auto Traders Theme Colors
+ * Matching mobile app theme from app_theme.dart
+ */
+
+:root {
+    /* Primary Colors - Green Theme */
+    --bs-primary: #636B2F;        /* Medium green - Primary */
+    --bs-primary-dark: #3D4127;   /* Dark green - Primary Dark */
+    --bs-secondary: #BAC095;       /* Light green - Secondary */
+    --bs-accent: #D4DE95;          /* Lightest green - Accent */
+    
+    /* Override Bootstrap defaults */
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #A0A0A0;
+    --bs-dark: #0D0D0D;
+    --bs-white: #ffffff;
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+    color: var(--bs-white);
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+/* Text primary color */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+/* Background primary */
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Spinner primary color */
+.spinner-grow.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+/* Link hover colors */
+a:hover {
+    color: var(--bs-primary);
+}
+
+/* Footer link colors - match theme */
+.footer a {
+    color: var(--bs-secondary) !important; /* Light green for dark background */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--bs-accent) !important; /* Lighter green on hover */
+}
+
+.footer a.border-bottom {
+    color: var(--bs-secondary) !important;
+    border-bottom-color: var(--bs-secondary) !important;
+}
+
+.footer a.border-bottom:hover {
+    color: var(--bs-accent) !important;
+    border-bottom-color: var(--bs-accent) !important;
+}
+
+/* Service item gradients with theme colors */
+.service-item.service-item-left {
+    background: linear-gradient(to right, var(--bs-secondary), var(--bs-dark));
+}
+
+.service-item.service-item-right {
+    background: linear-gradient(to left, var(--bs-secondary), var(--bs-dark));
+}
+
+@media (max-width: 767.98px) {
+    .service-item.service-item-left,
+    .service-item.service-item-right {
+        background: linear-gradient(to bottom, var(--bs-secondary), var(--bs-dark));
+    }
+}
+
