@@ -17,6 +17,36 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Responsive Logo Styles -->
+    <style>
+        .navbar-brand img {
+            height: 120px;
+            width: auto;
+            transition: height 0.3s ease;
+        }
+        
+        /* Tablet */
+        @media (max-width: 992px) {
+            .navbar-brand img {
+                height: 100px;
+            }
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                height: 80px;
+            }
+        }
+        
+        /* Small Mobile */
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                height: 70px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -27,7 +57,7 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0 d-flex align-items-center">
-                <img src="img/app_icon.png" alt="Oshani Auto Traders" class="me-2" style="height: 120px; width: auto;">
+                <img src="img/app_icon.png" alt="Oshani Auto Traders" class="me-2">
                 <!-- <h2 class="mb-0 text-primary text-uppercase">Oshani Auto Traders</h2> -->
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
